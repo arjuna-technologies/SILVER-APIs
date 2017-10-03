@@ -1,0 +1,17 @@
+Field	Type	Null	Key	Default	Extra
+refDate	date	NO		NULL	
+laName	varchar(16)	NO		NULL	
+laMonth	date	NO		NULL	
+uprn	char(12)	YES		NULL	
+address1LA	varchar(24)	NO		NULL	
+address2LA	varchar(24)	YES		NULL	
+address3LA	varchar(24)	YES		NULL	
+address4LA	varchar(24)	YES		NULL	
+postCodeLA	varchar(24)	NO		NULL	
+address1CIS	varchar(24)	YES		NULL	
+address2CIS	varchar(24)	YES		NULL	
+address3CIS	varchar(24)	YES		NULL	
+address4CIS	varchar(24)	YES		NULL	
+postCodeCIS	varchar(24)	YES		NULL	
+addMatchType	varchar(16)	NO		NULL	
+adultNumber	varchar(16)	NO		NULL	

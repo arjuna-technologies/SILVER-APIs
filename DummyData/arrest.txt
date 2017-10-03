@@ -1,0 +1,16 @@
+Field	Type	Null	Key	Default	Extra
+disposalRef	char(9)	NO		NULL	
+custodyRef	char(9)	NO		NULL	
+surname	char(12)	NO		NULL	
+forename	char(12)	NO		NULL	
+personSRN	char(7)	NO		NULL	
+dob	date	NO		NULL	
+disposalDate	date	NO		NULL	
+disposalTime	char(5)	NO		NULL	
+hoMainClassificationL3	char(64)	NO		NULL	
+hoMainClassificationL5	char(64)	NO		NULL	
+disposalTypeGroup	char(16)	NO		NULL	
+disposalType	char(16)	NO		NULL	
+localAuthorityOffenceLocation	char(16)	NO		NULL	
+address	char(128)	NO		NULL	
+localAuthorityAddress	char(16)	NO		NULL	

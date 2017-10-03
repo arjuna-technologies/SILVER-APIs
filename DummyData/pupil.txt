@@ -1,0 +1,13 @@
+Field	Type	Null	Key	Default	Extra
+upn	char(13)	NO		NULL	
+firstName	varchar(24)	NO		NULL	
+surname	varchar(24)	NO		NULL	
+dateOfBirth	char(8)	NO		NULL	
+address1	varchar(24)	NO		NULL	
+address2	varchar(24)	NO		NULL	
+address3	varchar(24)	NO		NULL	
+address4	varchar(24)	NO		NULL	
+uprn	char(12)	NO		NULL	
+currentSchoolYear	int(11)	YES		NULL	
+currentSchoolName	varchar(32)	NO		NULL	
+currentSchoolID	char(8)	NO		NULL	

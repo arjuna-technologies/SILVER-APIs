@@ -1,0 +1,5 @@
+Field	Type	Null	Key	Default	Extra
+schoolID	char(8)	NO		NULL	
+schoolStartOfYear	char(8)	NO		NULL	
+pupilUPN	char(13)	NO		NULL	
+attendanceMarks	text	NO		NULL	

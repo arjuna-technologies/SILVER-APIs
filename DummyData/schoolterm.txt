@@ -1,0 +1,6 @@
+Field	Type	Null	Key	Default	Extra
+schoolID	char(8)	NO		NULL	
+academicYears	char(9)	NO		NULL	
+termIdentifier	int(11)	YES		NULL	
+firstDayOfTerm	char(8)	NO		NULL	
+lastDayOfTerm	char(8)	NO		NULL	
