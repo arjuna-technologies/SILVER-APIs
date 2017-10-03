@@ -1,0 +1,30 @@
+*************************** 1. row ***************************
+       Table: dwp_match
+Create Table: CREATE TABLE `dwp_match` (
+  `refDate` date NOT NULL,
+  `laName` varchar(16) NOT NULL,
+  `laMonth` date NOT NULL,
+  `uprn` char(12) DEFAULT NULL,
+  `address1LA` varchar(24) NOT NULL,
+  `address2LA` varchar(24) DEFAULT NULL,
+  `address3LA` varchar(24) DEFAULT NULL,
+  `address4LA` varchar(24) DEFAULT NULL,
+  `postCodeLA` varchar(24) NOT NULL,
+  `address1CIS` varchar(24) DEFAULT NULL,
+  `address2CIS` varchar(24) DEFAULT NULL,
+  `address3CIS` varchar(24) DEFAULT NULL,
+  `address4CIS` varchar(24) DEFAULT NULL,
+  `postCodeCIS` varchar(24) DEFAULT NULL,
+  `addMatchType` varchar(16) NOT NULL,
+  `adultNumber` varchar(16) NOT NULL,
+  `title` varchar(8) NOT NULL,
+  `forename` varchar(24) NOT NULL,
+  `surname` varchar(24) NOT NULL,
+  `age` int(11) NOT NULL,
+  `startDateJSA` date DEFAULT NULL,
+  `startDateESA` date DEFAULT NULL,
+  `startDateIS` date DEFAULT NULL,
+  `startDateIB` date DEFAULT NULL,
+  `startDateSDA` date DEFAULT NULL,
+  `startDateCA` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
