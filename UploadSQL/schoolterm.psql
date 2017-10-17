@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS schoolterm;
+
+CREATE TABLE schoolterm
+(
+	schoolID       char(8) NOT NULL,
+	academicYears  char(9) NOT NULL,
+	termIdentifier integer,
+	firstDayOfTerm char(8) NOT NULL,
+	lastDayOfTerm  char(8) NOT NULL
+);
+
+\COPY schoolterm FROM 'schoolterm.csv' DELIMITER ',' CSV HEADER;

@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS exclusion;
+
+CREATE TABLE exclusion
+(
+	schoolID                char(8) NOT NULL,
+	upn                     char(13) NOT NULL,
+	exclusionTypeIdentifier char(1) NOT NULL,
+	firstDayOfExclusion     char(8) NOT NULL,
+	lastDayOfExclusion      char(8)
+);
+
+\COPY exclusion FROM 'exclusion.csv' DELIMITER ',' CSV HEADER;

@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS attendance;
+
+CREATE TABLE attendance
+(
+	schoolID          char(8) NOT NULL,
+	schoolStartOfYear char(8) NOT NULL,
+	pupilUPN          char(13) NOT NULL,
+	attendanceMarks   char(800) NOT NULL
+);
+
+\COPY attendance FROM 'attendance.csv' DELIMITER ',' CSV HEADER;

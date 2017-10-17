@@ -1,0 +1,45 @@
+DROP TABLE IF EXISTS missingandabsentchildren;
+
+CREATE TABLE missingandabsentchildren
+(
+	ppuRef                        char(10) NOT NULL,
+	surname                       char(16) NOT NULL,
+	forename                      char(16) NOT NULL,
+	personSRN                     char(7) NOT NULL,
+	dob                           date NOT NULL,
+	approxAgeAtTime               integer NOT NULL,
+	status                        char(16) NOT NULL,
+	incidentRef                   char(15) NOT NULL,
+	reportedDate                  date NOT NULL,
+	reportedTime                  char(5) NOT NULL,
+	riskLevel                     char(8) NOT NULL,
+	missingSinceDate              date NOT NULL,
+	missingSinceTime              char(5) NOT NULL,
+	missingFor                    char(12) NOT NULL,
+	childYouth                    char(1) NOT NULL,
+	inCare                        char(1) NOT NULL,
+	disability                    char(1) NOT NULL,
+	absconderFromHospital         char(1) NOT NULL,
+	foundDate                     date NOT NULL,
+	foundTime                     char(5) NOT NULL,
+	missingFormPremise            char(32),
+	missingFormStreet             char(32),
+	missingFormTown               char(32),
+	missingFormPostCode           char(32),
+	missingFormPremiseKey         char(14),
+	missingFormPremiseType        char(20),
+	missingFormPremiseEasting     char(6),
+	missingFormPremiseNorthing    char(6),
+	homePremise                   char(32),
+	homeStreet                    char(32),
+	homeTown                      char(32),
+	homePostCode                  char(32),
+	homePremiseKey                char(14),
+	homePremiseType               char(20),
+	homePremiseEasting            char(6),
+	homePremiseNorthing           char(6),
+	missingFormLocalAuthorityArea char(20),
+	homeLocalAuthorityArea        char(20)
+);
+
+\COPY missingandabsentchildren FROM 'missingandabsentchildren.csv' DELIMITER ',' CSV HEADER;

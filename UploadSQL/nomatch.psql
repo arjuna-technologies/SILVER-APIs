@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS nomatch;
+
+CREATE TABLE nomatch
+(
+	refDate      date NOT NULL,
+	laName       varchar(16) NOT NULL,
+	laMonth      date NOT NULL,
+	uprn         char(12),
+	address1LA   varchar(24) NOT NULL,
+	address2LA   varchar(24),
+	address3LA   varchar(24),
+	address4LA   varchar(24),
+	postCodeLA   varchar(24) NOT NULL,
+	address1CIS  varchar(24),
+	address2CIS  varchar(24),
+	address3CIS  varchar(24),
+	address4CIS  varchar(24),
+	postCodeCIS  varchar(24),
+	addMatchType varchar(16) NOT NULL,
+	adultNumber  varchar(16) NOT NULL
+);
+
+\COPY nomatch FROM 'nomatch.csv' DELIMITER ',' CSV HEADER;
